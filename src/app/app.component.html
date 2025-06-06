@@ -1,9 +1,3 @@
 <app-header></app-header>
-<app-user-input (userData)="onCalculate($event)"></app-user-input>
-@if (annualData() && annualData().length > 0) {
-<app-investment-results [annualData]="annualData()"></app-investment-results>
-} @else {
-<p class="no-data center">
-  Please enter your investment data to see the results.
-</p>
-}
+<app-user-input></app-user-input>
+<app-investment-results></app-investment-results>

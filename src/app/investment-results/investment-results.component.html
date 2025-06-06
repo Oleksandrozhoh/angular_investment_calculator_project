@@ -1,3 +1,4 @@
+@if (annualData && annualData.length > 0) {
 <table>
   <thead>
     <tr>
@@ -8,7 +9,7 @@
       <th>Invested Capital</th>
     </tr>
   </thead>
-  @for(each of annualData(); track each.year){
+  @for(each of annualData; track each.year){
   <tbody>
     <tr>
       <td>{{ each.year | currency }}</td>
@@ -20,3 +21,8 @@
   </tbody>
   }
 </table>
+} @else {
+<p class="no-data center">
+  Please enter your investment data to see the results.
+</p>
+}
