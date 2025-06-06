@@ -1,4 +1,4 @@
-@if (annualData && annualData.length > 0) {
+@if (annualData() && annualData.length > 0) {
 <table>
   <thead>
     <tr>
@@ -9,7 +9,7 @@
       <th>Invested Capital</th>
     </tr>
   </thead>
-  @for(each of annualData; track each.year){
+  @for(each of annualData(); track each.year){
   <tbody>
     <tr>
       <td>{{ each.year | currency }}</td>

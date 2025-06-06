@@ -1,4 +1,4 @@
-import { Component, inject, input, Input } from '@angular/core';
+import { Component, computed, inject, input, Input } from '@angular/core';
 import { AnnualData } from './annual-data.model';
 import { CommonModule } from '@angular/common';
 import { InvestmentResultsService } from '../investment-results.service';
@@ -14,9 +14,7 @@ export class InvestmentResultsComponent {
 
   investmentService = inject(InvestmentResultsService);
 
-  get annualData(){
-    return this.investmentService.annualData();
-  }
+  annualData = computed(() => this.investmentService.annualData());
 }
 
 
