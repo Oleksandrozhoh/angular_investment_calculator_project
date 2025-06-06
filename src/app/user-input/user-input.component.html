@@ -1,48 +1,58 @@
 <form (ngSubmit)="onCalculate()">
   <div class="input-group">
     <div>
-      <label for="userInput">INITIAL INVESTMENT</label>
-      <input
-        type="text"
-        id="initialInvestment"
-        name="initialInvestment"
-        [(ngModel)]="initialInvestment"
-        required
-      />
+      <p>
+        <label for="userInput">INITIAL INVESTMENT</label>
+        <input
+          type="number"
+          id="initialInvestment"
+          name="initialInvestment"
+          [(ngModel)]="initialInvestment"
+          required
+        />
+      </p>
     </div>
 
     <div>
-      <label for="userInput">ANNUAL INVESTMENT</label>
-      <input
-        type="text"
-        id="anualInvestment"
-        name="anualInvestment"
-        [(ngModel)]="anualInvestment"
-        required
-      />
+      <p>
+        <label for="userInput">ANNUAL INVESTMENT</label>
+        <input
+          type="number"
+          id="anualInvestment"
+          name="anualInvestment"
+          [(ngModel)]="anualInvestment"
+          required
+        />
+      </p>
     </div>
   </div>
   <div class="input-group">
     <div>
-      <label for="userInput">EXPECTED RETURN</label>
-      <input
-        type="text"
-        id="expectedReturn"
-        name="expectedReturn"
-        [(ngModel)]="expectedReturn"
-        required
-      />
+      <p>
+        <label for="userInput">EXPECTED RETURN</label>
+        <input
+          type="number"
+          id="expectedReturn"
+          name="expectedReturn"
+          [(ngModel)]="expectedReturn"
+          required
+        />
+      </p>
     </div>
     <div>
-      <label for="userInput">DURATION</label>
-      <input
-        type="text"
-        id="duration"
-        name="duration"
-        [(ngModel)]="duration"
-        required
-      />
+      <p>
+        <label for="userInput">DURATION</label>
+        <input
+          type="number"
+          id="duration"
+          name="duration"
+          [(ngModel)]="duration"
+          required
+        />
+      </p>
     </div>
   </div>
-  <button type="submit">CALCULATE</button>
+  <p>
+    <button type="submit">CALCULATE</button>
+  </p>
 </form>
